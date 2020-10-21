@@ -88,6 +88,7 @@ namespace gestione_mercato
             Comprato = false;
         }
 
+
         public string ScriviSuFile(char split)
         {
             if (Comprato)

@@ -36,8 +36,8 @@ namespace gestione_mercato
 
         public void RipristinaSelezione(Calciatore c)
         {
-            CalciatoriNonAcquistati.Add(c);
             c.Selezionato = false;
+            CalciatoriNonAcquistati.Add(c);            
             CalciatoriSelezioanti.Remove(c);
         }
 
@@ -53,6 +53,33 @@ namespace gestione_mercato
             CalciatoriAcquistati.Remove(c);
             c.Aquisto = -1;
             CalciatoriSelezioanti.Add(c);
+        }
+
+        public bool Contains(Calciatore c)
+        {
+            bool esistente = false;
+            foreach(Calciatore a in CalciatoriAcquistati)
+            {
+                if (c.Nome == a.Nome)
+                    esistente = true;
+            }
+            if (!esistente)
+            {
+                foreach(Calciatore a in CalciatoriNonAcquistati)
+                {
+                    if (c.Nome == a.Nome)
+                        esistente = true;
+                }
+                if (!esistente)
+                {
+                    foreach(Calciatore a in CalciatoriSelezioanti)
+                    {
+                        if (c.Nome == a.Nome)
+                            esistente = true;
+                    }
+                }
+            }
+            return esistente;
         }
 
         public string[] ScriviSuFile(char split)

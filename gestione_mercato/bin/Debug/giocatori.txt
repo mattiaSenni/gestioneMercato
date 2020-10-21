@@ -1,5 +1,5 @@
 Yedlin|td|14|False|False
-Gomes|cc|2|False|False
-Puig|cc|6|False|False
-Foden|coc|23|False|False
 Van Aanholt|ts|12|False|False
+Gomes|cc|2|False|False
+Foden|coc|23|False|False
+Puig|cc|6|False|True|-1

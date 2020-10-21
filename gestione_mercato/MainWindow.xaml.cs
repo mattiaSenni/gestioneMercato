@@ -144,6 +144,7 @@ namespace gestione_mercato
         private void ScriviFile(string[] a)
         {
             _calciatori.OrdinaList();
+            RiempiList();
             File.WriteAllLines("giocatori.txt", a);
         }
 
@@ -177,7 +178,7 @@ namespace gestione_mercato
             try
             {
                 Calciatore c = new Calciatore(txtNomeAG.Text, (string)cmbRuoloAG.SelectedItem, int.Parse(txtPrezzoAG.Text), false);
-                if (_calciatori.CalciatoriAcquistati.Contains(c) || _calciatori.CalciatoriNonAcquistati.Contains(c) || _calciatori.CalciatoriSelezioanti.Contains(c))
+                if (_calciatori.Contains(c))
                     throw new Exception("calciatore esistente");
                 _calciatori.CalciatoriNonAcquistati.Add(c);
                 ScriviFile(_calciatori.ScriviSuFile('|'));

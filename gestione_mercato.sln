@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gestione_mercato", "gestione_mercato\gestione_mercato.csproj", "{7F9F5804-E94C-41B9-81C1-9BFE02C0C9FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F9F5804-E94C-41B9-81C1-9BFE02C0C9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9F5804-E94C-41B9-81C1-9BFE02C0C9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9F5804-E94C-41B9-81C1-9BFE02C0C9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9F5804-E94C-41B9-81C1-9BFE02C0C9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {605EF6A7-488A-48CC-A745-55F09C7F2195}
+	EndGlobalSection
+EndGlobal

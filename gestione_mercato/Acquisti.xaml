@@ -1,0 +1,21 @@
+﻿<Window x:Class="gestione_mercato.Acquisti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gestione_mercato"
+        mc:Ignorable="d"
+        Title="Acquisti" Height="450" Width="292.958">
+    <Grid>
+        <ListView x:Name="lstAcquisti" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="284">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nome" Width="150px" DisplayMemberBinding="{Binding Nome}"/>
+                    <GridViewColumn Header="Ruolo" Width="50px" DisplayMemberBinding="{Binding Ruolo}"/>
+                    <GridViewColumn Header="Costo" Width="80px" DisplayMemberBinding="{Binding Aquisto}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
